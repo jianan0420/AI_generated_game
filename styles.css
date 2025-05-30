@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #777, #feb47b);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.game {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.game h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.game:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#game-board {
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.canvas {
+    background: #ddd;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #000;
+}
+
+#score {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+button, .back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .back-button:hover {
+    background: #f0f0f0;
+}
+
+#game-over {
+    font-size: 2em;
+    color: red;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 貪吃蛇樣式 */
+canvas {
+    background: #ddd;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #000;
+}
+
+/* 吃豆人樣式 */
+#pacman-game-board {
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.pacman-cell {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pacman-pacman {
+    width: 100%;
+    height: 100%;
+    background: url('pacman.png') no-repeat center;
+    background-size: contain;
+}
+
+.pacman-ghost {
+    width: 100%;
+    height: 100%;
+    background: url('ghost-1.png') no-repeat center;
+    background-size: contain;
+}
+
+.pacman-dot {
+    width: 50%;
+    height: 50%;
+    background: yellow;
+    border-radius: 50%;
+}
+
+.pacman-wall {
+    width: 100%;
+    height: 100%;
+    background: gray;
+}
+
+/* 蛇棋遊戲樣式 */
+#game-board {
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    user-select: none;
+    background-color: #ccc;
+}
+
+.cell.revealed {
+    background: none;
+    cursor: default;
+}
+
+.cell.mine {
+    background: yellow;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+#you-win {
+    font-size: 2em;
+    color: yellow;
+    margin-top: 20px;
+}
+#win {
+    font-size: 2em;
+    color: yellow;
+    margin-top: 20px;
+}

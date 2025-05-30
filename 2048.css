@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #777, #feb47b);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#score {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+start-button, .back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+start-button:hover, .back-button:hover {
+    background: #f0f0f0;
+}
+
+
+#game-board {
+    display: grid;
+    gap: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    width: max-content;
+    background-color: #bbada0;
+    border-radius: 10px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-color: #cdc1b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.tile[data-value="2"] {
+    background-color: #eee4da;
+    color: #776e65;
+}
+
+.tile[data-value="4"] {
+    background-color: #ede0c8;
+    color: #776e65;
+}
+
+.tile[data-value="8"] {
+    background-color: #f2b179;
+    color: #f9f6f2;
+}
+
+.tile[data-value="16"] {
+    background-color: #f59563;
+    color: #f9f6f2;
+}
+
+.tile[data-value="32"] {
+    background-color: #f67c5f;
+    color: #f9f6f2;
+}
+
+.tile[data-value="64"] {
+    background-color: #f65e3b;
+    color: #f9f6f2;
+}
+
+.tile[data-value="128"] {
+    background-color: #edcf72;
+    color: #f9f6f2;
+}
+
+.tile[data-value="256"] {
+    background-color: #edcc61;
+    color: #f9f6f2;
+}
+
+.tile[data-value="512"] {
+    background-color: #edc850;
+    color: #f9f6f2;
+}
+
+.tile[data-value="1024"] {
+    background-color: #edc53f;
+    color: #f9f6f2;
+}
+
+.tile[data-value="2048"] {
+    background-color: #edc22e;
+    color: #f9f6f2;
+}
+.container {
+    padding: 20px;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#game-over {
+    font-size: 2em;
+    color: red;
+    margin-top: 20px;
+}
